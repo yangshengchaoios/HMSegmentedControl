@@ -35,6 +35,12 @@
 		54F05AEF1689D34A0064FCE1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F05AEE1689D34A0064FCE1 /* Default-568h@2x.png */; };
 		54F05AF21689D34B0064FCE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F05AF11689D34B0064FCE1 /* ViewController.m */; };
 		54F05B001689D38C0064FCE1 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F05AFF1689D38C0064FCE1 /* HMSegmentedControl.m */; };
+		D305E3BC19C497670083CDC5 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = D305E3B619C497670083CDC5 /* 111.png */; };
+		D305E3BD19C497670083CDC5 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = D305E3B719C497670083CDC5 /* 222.png */; };
+		D305E3BE19C497670083CDC5 /* 333.png in Resources */ = {isa = PBXBuildFile; fileRef = D305E3B819C497670083CDC5 /* 333.png */; };
+		D305E3BF19C497670083CDC5 /* 444.png in Resources */ = {isa = PBXBuildFile; fileRef = D305E3B919C497670083CDC5 /* 444.png */; };
+		D305E3C019C497670083CDC5 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D305E3BB19C497670083CDC5 /* MyViewController.m */; };
+		D305E3C219C498DC0083CDC5 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = D305E3C119C498DB0083CDC5 /* sample.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +78,13 @@
 		54F05AFB1689D3650064FCE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		54F05AFE1689D38C0064FCE1 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		54F05AFF1689D38C0064FCE1 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		D305E3B619C497670083CDC5 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
+		D305E3B719C497670083CDC5 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
+		D305E3B819C497670083CDC5 /* 333.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 333.png; sourceTree = "<group>"; };
+		D305E3B919C497670083CDC5 /* 444.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 444.png; sourceTree = "<group>"; };
+		D305E3BA19C497670083CDC5 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		D305E3BB19C497670083CDC5 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		D305E3C119C498DB0083CDC5 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +133,13 @@
 		54F05ADE1689D34A0064FCE1 /* HMSegmentedControlExample */ = {
 			isa = PBXGroup;
 			children = (
+				D305E3B619C497670083CDC5 /* 111.png */,
+				D305E3B719C497670083CDC5 /* 222.png */,
+				D305E3B819C497670083CDC5 /* 333.png */,
+				D305E3B919C497670083CDC5 /* 444.png */,
+				D305E3C119C498DB0083CDC5 /* sample.png */,
+				D305E3BA19C497670083CDC5 /* MyViewController.h */,
+				D305E3BB19C497670083CDC5 /* MyViewController.m */,
 				54F05AFD1689D38C0064FCE1 /* HMSegmentedControl */,
 				54F05AE71689D34A0064FCE1 /* AppDelegate.h */,
 				54F05AE81689D34A0064FCE1 /* AppDelegate.m */,
@@ -234,7 +254,10 @@
 				54F05AEB1689D34A0064FCE1 /* Default.png in Resources */,
 				54F05AED1689D34A0064FCE1 /* Default@2x.png in Resources */,
 				54F05AEF1689D34A0064FCE1 /* Default-568h@2x.png in Resources */,
+				D305E3C219C498DC0083CDC5 /* sample.png in Resources */,
+				D305E3BD19C497670083CDC5 /* 222.png in Resources */,
 				54E531BE16B951AB005F17A1 /* 1-selected.png in Resources */,
+				D305E3BF19C497670083CDC5 /* 444.png in Resources */,
 				54E531BF16B951AB005F17A1 /* 1-selected@2x.png in Resources */,
 				54E531C016B951AB005F17A1 /* 1.png in Resources */,
 				54E531C116B951AB005F17A1 /* 1@2x.png in Resources */,
@@ -245,7 +268,9 @@
 				54E531C616B951AB005F17A1 /* 3-selected.png in Resources */,
 				54E531C716B951AB005F17A1 /* 3-selected@2x.png in Resources */,
 				54E531C816B951AB005F17A1 /* 3.png in Resources */,
+				D305E3BC19C497670083CDC5 /* 111.png in Resources */,
 				54E531C916B951AB005F17A1 /* 3@2x.png in Resources */,
+				D305E3BE19C497670083CDC5 /* 333.png in Resources */,
 				54E531CA16B951AB005F17A1 /* 4-selected.png in Resources */,
 				54E531CB16B951AB005F17A1 /* 4-selected@2x.png in Resources */,
 				54E531CC16B951AB005F17A1 /* 4.png in Resources */,
@@ -264,6 +289,7 @@
 				54F05AE91689D34A0064FCE1 /* AppDelegate.m in Sources */,
 				54F05AF21689D34B0064FCE1 /* ViewController.m in Sources */,
 				54F05B001689D38C0064FCE1 /* HMSegmentedControl.m in Sources */,
+				D305E3C019C497670083CDC5 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

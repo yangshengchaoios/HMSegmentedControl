@@ -72,7 +72,7 @@ typedef enum {
  */
 @property (nonatomic, strong) UIColor *textColor;
 
-/* 
+/*
  Text color for selected segment name when segmented control type is `HMSegmentedControlTypeText`
  
  Default is [UIColor blackColor]
@@ -92,6 +92,13 @@ typedef enum {
  Default is R:52, G:181, B:229
  */
 @property (nonatomic, strong) UIColor *selectionIndicatorColor;
+
+/*
+ Opacity for the seletion inficator box.
+ 
+ Default is 0.2
+ */
+@property (nonatomic) CGFloat selectionIndicatorBoxOpacity;
 
 /*
  Specifies the style of the control
@@ -126,8 +133,10 @@ typedef enum {
  
  When set to YES, segment width will be automatically set to the width of the biggest segment's text or image,
  otherwise it will be equal to the width of the control's frame divided by the number of segments.
+ 
+ As of v 1.4 this is no longer needed. The control will manage scrolling automatically based on tabs sizes.
  */
-@property(nonatomic, getter = isScrollEnabled) BOOL scrollEnabled;
+@property(nonatomic, getter = isScrollEnabled) BOOL scrollEnabled DEPRECATED_ATTRIBUTE;
 
 /*
  Default is YES. Set to NO to deny scrolling by dragging the scrollView by the user.
@@ -153,11 +162,31 @@ typedef enum {
 @property (nonatomic, readwrite) CGFloat selectionIndicatorHeight;
 
 /*
+ Edge insets for the selection indicator.
+ NOTE: This does not affect the bounding box of HMSegmentedControlSelectionStyleBox
+ 
+ When HMSegmentedControlSelectionIndicatorLocationUp is selected, bottom edge insets are not used
+ 
+ When HMSegmentedControlSelectionIndicatorLocationDown is selected, top edge insets are not used
+ 
+ Defaults are top: 0.0f
+ left: 0.0f
+ bottom: 0.0f
+ right: 0.0f
+ */
+@property (nonatomic, readwrite) UIEdgeInsets selectionIndicatorEdgeInsets;
+
+/*
  Inset left and right edges of segments. Only effective when `scrollEnabled` is set to YES.
  
  Default is UIEdgeInsetsMake(0, 5, 0, 5)
  */
 @property (nonatomic, readwrite) UIEdgeInsets segmentEdgeInset;
+
+/*
+ Default is YES. Set to NO to disable animation during user selection.
+ */
+@property (nonatomic) BOOL shouldAnimateUserSelection;
 
 - (id)initWithSectionTitles:(NSArray *)sectiontitles;
 - (id)initWithSectionImages:(NSArray *)sectionImages sectionSelectedImages:(NSArray *)sectionSelectedImages;
